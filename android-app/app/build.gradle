@@ -20,6 +20,18 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            applicationIdSuffix ".debug"
+        }
+    }
+    
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def appName = "滇同学·智慧安卓"
+            def buildType = variant.buildType.name
+            def versionName = variant.versionName
+            outputFileName = "${appName}-${buildType}-${versionName}.apk"
+        }
     }
     
     compileOptions {
