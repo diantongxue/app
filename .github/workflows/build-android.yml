@@ -43,15 +43,15 @@ jobs:
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: app-debug-apk
-        path: android-app/app/build/outputs/apk/debug/app-debug.apk
+        name: 滇同学·智慧安卓-debug-apk
+        path: android-app/app/build/outputs/apk/debug/滇同学·智慧安卓-debug-*.apk
         retention-days: 30
     
     - name: Upload APK as Release Asset (optional)
       if: github.event_name == 'workflow_dispatch'
       uses: softprops/action-gh-release@v1
       with:
-        files: android-app/app/build/outputs/apk/debug/app-debug.apk
+        files: android-app/app/build/outputs/apk/debug/滇同学·智慧安卓-debug-*.apk
         tag_name: v1.0.0
         name: Android App APK
         body: |
