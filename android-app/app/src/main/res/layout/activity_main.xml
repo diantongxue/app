@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未连接"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/serverUrlInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="服务器地址 (例如: http://192.168.1.100:3001)"
+        android:inputType="textUri"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="连接服务器"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/startScreenCaptureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始屏幕录制"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/stopScreenCaptureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止屏幕录制"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/openSettingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开无障碍设置"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用说明：\n1. 输入服务器地址并连接\n2. 开启屏幕录制\n3. 在无障碍设置中开启ControlService和DataCollectorService"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:padding="8dp" />
+
+</LinearLayout>
+

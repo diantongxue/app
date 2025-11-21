@@ -1,0 +1,41 @@
+.log-viewer-container {
+  background: #001529;
+  color: #fff;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-y: auto;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 12px;
+  line-height: 1.6;
+
+  .log-entry {
+    margin-bottom: 4px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+
+  .log-empty {
+    text-align: center;
+    color: #8c8c8c;
+    padding: 40px 0;
+  }
+
+  // 滚动条样式
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #001529;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #434343;
+    border-radius: 4px;
+
+    &:hover {
+      background: #595959;
+    }
+  }
+}
+

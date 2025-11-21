@@ -1,0 +1,2205 @@
+{
+  "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+  "pkg": {
+    "name": "frontend",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+      "dev": "umi dev",
+      "build": "umi build",
+      "start": "npm run dev",
+      "lint": "umi lint"
+    },
+    "dependencies": {
+      "@ant-design/icons": "^5.5.1",
+      "@ant-design/pro-components": "^2.7.8",
+      "antd": "^5.22.0",
+      "dayjs": "^1.11.19",
+      "echarts": "^5.5.2",
+      "echarts-for-react": "^3.0.2",
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0",
+      "react-router-dom": "^7.9.6",
+      "socket.io-client": "^4.8.1"
+    },
+    "devDependencies": {
+      "@types/react": "^19.0.0",
+      "@types/react-dom": "^19.0.0",
+      "@umijs/max": "^4.3.0",
+      "typescript": "^5.7.2"
+    }
+  },
+  "pkgPath": "/Users/mac/Desktop/故乡食品/app/frontend/package.json",
+  "plugins": {
+    "./node_modules/@umijs/core/dist/service/servicePlugin": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "preset",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/core/dist/service/servicePlugin.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/core/dist/service/servicePlugin",
+      "key": "servicePlugin"
+    },
+    "@umijs/preset-umi": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 7
+      },
+      "enableBy": "register",
+      "type": "preset",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/index.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "@umijs/preset-umi",
+      "key": "umi"
+    },
+    "./node_modules/@umijs/preset-umi/dist/registerMethods": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onStart": [
+            0
+          ]
+        },
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/registerMethods.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/registerMethods",
+      "key": "registerMethods"
+    },
+    "@umijs/did-you-know": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onStart": [
+            4
+          ]
+        },
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/did-you-know/dist/plugin.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "@umijs/did-you-know",
+      "key": "umijsDidYouKnow"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/404/404": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyRoutes": [
+            0
+          ]
+        },
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/404/404.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/404/404",
+      "key": "404"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/aiDev/aiDev": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/aiDev/aiDev.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/aiDev/aiDev",
+      "key": "aiDev"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/appData/appData": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyAppData": [
+            11
+          ]
+        },
+        "register": 18
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/appData/appData.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/appData/appData",
+      "key": "appData"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/appData/umiInfo": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/appData/umiInfo.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/appData/umiInfo",
+      "key": "umiInfo"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/check/check": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onCheckConfig": [
+            1
+          ],
+          "onCheck": [
+            1
+          ]
+        },
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/check/check.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/check/check",
+      "key": "check"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/check/babel722": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onCheck": [
+            0
+          ]
+        },
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/check/babel722.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/check/babel722",
+      "key": "babel722"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/codeSplitting/codeSplitting": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/codeSplitting/codeSplitting.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/codeSplitting/codeSplitting",
+      "key": "codeSplitting"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/configPlugins/configPlugins": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyConfig": [
+            0
+          ]
+        },
+        "register": 7
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/configPlugins/configPlugins.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/configPlugins/configPlugins",
+      "key": "configPlugins"
+    },
+    "virtual: config-title": {
+      "id": "virtual: config-title",
+      "key": "title",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-styles": {
+      "id": "virtual: config-styles",
+      "key": "styles",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-scripts": {
+      "id": "virtual: config-scripts",
+      "key": "scripts",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-routes": {
+      "id": "virtual: config-routes",
+      "key": "routes",
+      "config": {
+        "onChange": "regenerateTmpFiles"
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-routeLoader": {
+      "id": "virtual: config-routeLoader",
+      "key": "routeLoader",
+      "config": {
+        "default": {
+          "moduleType": "esm"
+        }
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-reactRouter5Compat": {
+      "id": "virtual: config-reactRouter5Compat",
+      "key": "reactRouter5Compat",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-presets": {
+      "id": "virtual: config-presets",
+      "key": "presets",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-plugins": {
+      "id": "virtual: config-plugins",
+      "key": "plugins",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-npmClient": {
+      "id": "virtual: config-npmClient",
+      "key": "npmClient",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-mountElementId": {
+      "id": "virtual: config-mountElementId",
+      "key": "mountElementId",
+      "config": {
+        "default": "root"
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-metas": {
+      "id": "virtual: config-metas",
+      "key": "metas",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-links": {
+      "id": "virtual: config-links",
+      "key": "links",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-historyWithQuery": {
+      "id": "virtual: config-historyWithQuery",
+      "key": "historyWithQuery",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-history": {
+      "id": "virtual: config-history",
+      "key": "history",
+      "config": {
+        "default": {
+          "type": "browser"
+        }
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-headScripts": {
+      "id": "virtual: config-headScripts",
+      "key": "headScripts",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-esbuildMinifyIIFE": {
+      "id": "virtual: config-esbuildMinifyIIFE",
+      "key": "esbuildMinifyIIFE",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-conventionRoutes": {
+      "id": "virtual: config-conventionRoutes",
+      "key": "conventionRoutes",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-conventionLayout": {
+      "id": "virtual: config-conventionLayout",
+      "key": "conventionLayout",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-base": {
+      "id": "virtual: config-base",
+      "key": "base",
+      "config": {
+        "default": "/"
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-analyze": {
+      "id": "virtual: config-analyze",
+      "key": "analyze",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-writeToDisk": {
+      "id": "virtual: config-writeToDisk",
+      "key": "writeToDisk",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-transformRuntime": {
+      "id": "virtual: config-transformRuntime",
+      "key": "transformRuntime",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-theme": {
+      "id": "virtual: config-theme",
+      "key": "theme",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-targets": {
+      "id": "virtual: config-targets",
+      "key": "targets",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-svgr": {
+      "id": "virtual: config-svgr",
+      "key": "svgr",
+      "config": {
+        "default": {}
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-svgo": {
+      "id": "virtual: config-svgo",
+      "key": "svgo",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-stylusLoader": {
+      "id": "virtual: config-stylusLoader",
+      "key": "stylusLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-styleLoader": {
+      "id": "virtual: config-styleLoader",
+      "key": "styleLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-srcTranspilerOptions": {
+      "id": "virtual: config-srcTranspilerOptions",
+      "key": "srcTranspilerOptions",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-srcTranspiler": {
+      "id": "virtual: config-srcTranspiler",
+      "key": "srcTranspiler",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-sassLoader": {
+      "id": "virtual: config-sassLoader",
+      "key": "sassLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-runtimePublicPath": {
+      "id": "virtual: config-runtimePublicPath",
+      "key": "runtimePublicPath",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-purgeCSS": {
+      "id": "virtual: config-purgeCSS",
+      "key": "purgeCSS",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-publicPath": {
+      "id": "virtual: config-publicPath",
+      "key": "publicPath",
+      "config": {
+        "default": "/"
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-proxy": {
+      "id": "virtual: config-proxy",
+      "key": "proxy",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-postcssLoader": {
+      "id": "virtual: config-postcssLoader",
+      "key": "postcssLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-outputPath": {
+      "id": "virtual: config-outputPath",
+      "key": "outputPath",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-normalCSSLoaderModules": {
+      "id": "virtual: config-normalCSSLoaderModules",
+      "key": "normalCSSLoaderModules",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-mfsu": {
+      "id": "virtual: config-mfsu",
+      "key": "mfsu",
+      "config": {
+        "default": {
+          "strategy": "eager"
+        }
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-mdx": {
+      "id": "virtual: config-mdx",
+      "key": "mdx",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-manifest": {
+      "id": "virtual: config-manifest",
+      "key": "manifest",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-lessLoader": {
+      "id": "virtual: config-lessLoader",
+      "key": "lessLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-jsMinifierOptions": {
+      "id": "virtual: config-jsMinifierOptions",
+      "key": "jsMinifierOptions",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-jsMinifier": {
+      "id": "virtual: config-jsMinifier",
+      "key": "jsMinifier",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-inlineLimit": {
+      "id": "virtual: config-inlineLimit",
+      "key": "inlineLimit",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-ignoreMomentLocale": {
+      "id": "virtual: config-ignoreMomentLocale",
+      "key": "ignoreMomentLocale",
+      "config": {
+        "default": true
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-https": {
+      "id": "virtual: config-https",
+      "key": "https",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-hash": {
+      "id": "virtual: config-hash",
+      "key": "hash",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-forkTSChecker": {
+      "id": "virtual: config-forkTSChecker",
+      "key": "forkTSChecker",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-fastRefresh": {
+      "id": "virtual: config-fastRefresh",
+      "key": "fastRefresh",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-extraPostCSSPlugins": {
+      "id": "virtual: config-extraPostCSSPlugins",
+      "key": "extraPostCSSPlugins",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-extraBabelPresets": {
+      "id": "virtual: config-extraBabelPresets",
+      "key": "extraBabelPresets",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-extraBabelPlugins": {
+      "id": "virtual: config-extraBabelPlugins",
+      "key": "extraBabelPlugins",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-extraBabelIncludes": {
+      "id": "virtual: config-extraBabelIncludes",
+      "key": "extraBabelIncludes",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-externals": {
+      "id": "virtual: config-externals",
+      "key": "externals",
+      "config": {
+        "default": {}
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-esm": {
+      "id": "virtual: config-esm",
+      "key": "esm",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-devtool": {
+      "id": "virtual: config-devtool",
+      "key": "devtool",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-depTranspiler": {
+      "id": "virtual: config-depTranspiler",
+      "key": "depTranspiler",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-define": {
+      "id": "virtual: config-define",
+      "key": "define",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-deadCode": {
+      "id": "virtual: config-deadCode",
+      "key": "deadCode",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cssPublicPath": {
+      "id": "virtual: config-cssPublicPath",
+      "key": "cssPublicPath",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cssMinifierOptions": {
+      "id": "virtual: config-cssMinifierOptions",
+      "key": "cssMinifierOptions",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cssMinifier": {
+      "id": "virtual: config-cssMinifier",
+      "key": "cssMinifier",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cssLoaderModules": {
+      "id": "virtual: config-cssLoaderModules",
+      "key": "cssLoaderModules",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cssLoader": {
+      "id": "virtual: config-cssLoader",
+      "key": "cssLoader",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-copy": {
+      "id": "virtual: config-copy",
+      "key": "copy",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-checkDepCssModules": {
+      "id": "virtual: config-checkDepCssModules",
+      "key": "checkDepCssModules",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-chainWebpack": {
+      "id": "virtual: config-chainWebpack",
+      "key": "chainWebpack",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-cacheDirectoryPath": {
+      "id": "virtual: config-cacheDirectoryPath",
+      "key": "cacheDirectoryPath",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-babelLoaderCustomize": {
+      "id": "virtual: config-babelLoaderCustomize",
+      "key": "babelLoaderCustomize",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-autoprefixer": {
+      "id": "virtual: config-autoprefixer",
+      "key": "autoprefixer",
+      "config": {},
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-autoCSSModules": {
+      "id": "virtual: config-autoCSSModules",
+      "key": "autoCSSModules",
+      "config": {
+        "default": true
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "virtual: config-alias": {
+      "id": "virtual: config-alias",
+      "key": "alias",
+      "config": {
+        "default": {
+          "umi": "@@/exports",
+          "react": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/react",
+          "react-dom": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/react-dom",
+          "react-router": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/react-router",
+          "react-router-dom": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/node_modules/react-router-dom"
+        }
+      },
+      "type": "plugin",
+      "enableBy": "register",
+      "time": {
+        "hooks": {},
+        "register": 0
+      }
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/crossorigin/crossorigin": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/crossorigin/crossorigin.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/crossorigin/crossorigin",
+      "key": "crossorigin"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/depsOnDemand/depsOnDemand": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "onStart": [
+            1
+          ]
+        },
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/depsOnDemand/depsOnDemand.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/depsOnDemand/depsOnDemand",
+      "key": "depsOnDemand"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/devTool/devTool": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/devTool/devTool.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/devTool/devTool",
+      "key": "devTool"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/esbuildHelperChecker/esbuildHelperChecker": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 55
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/esbuildHelperChecker/esbuildHelperChecker.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/esbuildHelperChecker/esbuildHelperChecker",
+      "key": "esbuildHelperChecker"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/esmi/esmi": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 30
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/esmi/esmi.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/esmi/esmi",
+      "key": "esmi"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/exportStatic/exportStatic": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 11
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/exportStatic/exportStatic.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/exportStatic/exportStatic",
+      "key": "exportStatic"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/favicons/favicons": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyAppData": [
+            0
+          ]
+        },
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/favicons/favicons.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/favicons/favicons",
+      "key": "favicons"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/helmet/helmet": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/helmet/helmet.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/helmet/helmet",
+      "key": "helmet"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/icons/icons": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/icons/icons.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/icons/icons",
+      "key": "icons"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/mock/mock": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 27
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/mock/mock.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/mock/mock",
+      "key": "mock"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/mpa/mpa": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/mpa/mpa.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/mpa/mpa",
+      "key": "mpa"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/okam/okam": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/okam/okam.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/okam/okam",
+      "key": "okam"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/overrides/overrides": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/overrides/overrides.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/overrides/overrides",
+      "key": "overrides"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/phantomDependency/phantomDependency": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/phantomDependency/phantomDependency.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/phantomDependency/phantomDependency",
+      "key": "phantomDependency"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/polyfill/polyfill": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "modifyConfig": [
+            0
+          ]
+        },
+        "register": 1
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/polyfill/polyfill.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/polyfill/polyfill",
+      "key": "polyfill"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/polyfill/publicPathPolyfill": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/polyfill/publicPathPolyfill.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/polyfill/publicPathPolyfill",
+      "key": "publicPathPolyfill"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/prepare/prepare": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/prepare/prepare.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/prepare/prepare",
+      "key": "prepare"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/routePrefetch/routePrefetch": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/routePrefetch/routePrefetch.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/routePrefetch/routePrefetch",
+      "key": "routePrefetch"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/stagewise/stagewise": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/stagewise/stagewise.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/stagewise/stagewise",
+      "key": "stagewise"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/terminal/terminal": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/terminal/terminal.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/terminal/terminal",
+      "key": "terminal"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/tmpFiles/tmpFiles": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 5
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/tmpFiles/tmpFiles.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/tmpFiles/tmpFiles",
+      "key": "tmpFiles"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/clientLoader/clientLoader": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/clientLoader/clientLoader.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/clientLoader/clientLoader",
+      "key": "clientLoader"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/routeProps/routeProps": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/routeProps/routeProps.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/routeProps/routeProps",
+      "key": "routeProps"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/ssr/ssr": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/ssr/ssr.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/ssr/ssr",
+      "key": "ssr"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/tmpFiles/configTypes": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/tmpFiles/configTypes.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/tmpFiles/configTypes",
+      "key": "configTypes"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/transform/transform": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/transform/transform.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/transform/transform",
+      "key": "transform"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/lowImport/lowImport": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 2
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/lowImport/lowImport.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/lowImport/lowImport",
+      "key": "lowImport"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/vite/vite": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/vite/vite.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/vite/vite",
+      "key": "vite"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/apiRoute/apiRoute": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 4
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/apiRoute/apiRoute.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/apiRoute/apiRoute",
+      "key": "apiRoute"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/monorepo/redirect": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 18
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/monorepo/redirect.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/monorepo/redirect",
+      "key": "monorepoRedirect"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/test/test": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/test/test.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/test/test",
+      "key": "test"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/clickToComponent/clickToComponent",
+      "key": "clickToComponent"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/legacy/legacy": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/legacy/legacy.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/legacy/legacy",
+      "key": "legacy"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/classPropertiesLoose/classPropertiesLoose": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/classPropertiesLoose/classPropertiesLoose.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/classPropertiesLoose/classPropertiesLoose",
+      "key": "classPropertiesLoose"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/webpack/webpack": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/webpack/webpack.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/webpack/webpack",
+      "key": "preset-umi:webpack"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/swc/swc": {
+      "config": {},
+      "time": {
+        "hooks": {
+          "addOnDemandDeps": [
+            0
+          ]
+        },
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/swc/swc.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/swc/swc",
+      "key": "swc"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/ui/ui": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/ui/ui.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/ui/ui",
+      "key": "ui"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/mako/mako": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/mako/mako.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/mako/mako",
+      "key": "mako"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/utoopack/utoopack": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/utoopack/utoopack.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/utoopack/utoopack",
+      "key": "utoopack"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/hmrGuardian/hmrGuardian",
+      "key": "hmrGuardian"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 19
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad",
+      "key": "routePreloadOnLoad"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/forget/forget": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 2
+      },
+      "enableBy": "config",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/forget/forget.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/forget/forget",
+      "key": "forget"
+    },
+    "./node_modules/@umijs/preset-umi/dist/features/bundler/bundler": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/features/bundler/bundler.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/features/bundler/bundler",
+      "key": "preset-umi:bundler"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/build": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/build.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/build",
+      "key": "build"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/config/config": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 26
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/config/config.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/config/config",
+      "key": "config"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/dev/dev": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 33
+      },
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/dev/dev.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/dev/dev",
+      "key": "dev"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/help": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/help.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/help",
+      "key": "help"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/lint": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/lint.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/lint",
+      "key": "lint"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/setup": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/setup.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/setup",
+      "key": "setup"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/deadcode": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/deadcode.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/deadcode",
+      "key": "deadcode"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/version": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/version.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/version",
+      "key": "version"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/page": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 2
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/page.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/page",
+      "key": "generator:page"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/prettier": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/prettier.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/prettier",
+      "key": "generator:prettier"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/tsconfig": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/tsconfig.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/tsconfig",
+      "key": "generator:tsconfig"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/jest": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/jest.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/jest",
+      "key": "generator:jest"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/tailwindcss": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/tailwindcss.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/tailwindcss",
+      "key": "generator:tailwindcss"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/dva": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/dva.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/dva",
+      "key": "generator:dva"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/component": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/component.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/component",
+      "key": "generator:component"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/mock": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/mock.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/mock",
+      "key": "generator:mock"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/cypress": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/cypress.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/cypress",
+      "key": "generator:cypress"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/api": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/api.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/api",
+      "key": "generator:api"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/generators/precommit": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/generators/precommit.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/generators/precommit",
+      "key": "generator:precommit"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/plugin": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/plugin.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/plugin",
+      "key": "command:plugin"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/verify-commit": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 1
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/verify-commit.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/verify-commit",
+      "key": "verifyCommit"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/preview": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 16
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/preview.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/preview",
+      "key": "preview"
+    },
+    "./node_modules/@umijs/preset-umi/dist/commands/mfsu/mfsu": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/dist/commands/mfsu/mfsu.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/preset-umi/dist/commands/mfsu/mfsu",
+      "key": "mfsu-cli"
+    },
+    "@umijs/plugin-run": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 3
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/plugin-run/dist/index.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "@umijs/plugin-run",
+      "key": "run"
+    },
+    "./node_modules/@umijs/core/dist/service/generatePlugin": {
+      "config": {},
+      "time": {
+        "hooks": {},
+        "register": 0
+      },
+      "enableBy": "register",
+      "type": "plugin",
+      "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/core/dist/service/generatePlugin.js",
+      "cwd": "/Users/mac/Desktop/故乡食品/app/frontend",
+      "id": "./node_modules/@umijs/core/dist/service/generatePlugin",
+      "key": "generatePlugin"
+    }
+  },
+  "presets": [],
+  "name": "build",
+  "args": {
+    "_": []
+  },
+  "userConfig": {
+    "routes": [
+      {
+        "path": "/",
+        "redirect": "/device"
+      },
+      {
+        "path": "/device",
+        "name": "设备管理",
+        "icon": "mobile",
+        "routes": [
+          {
+            "path": "/device/list",
+            "name": "设备列表",
+            "component": "./device/list"
+          },
+          {
+            "path": "/device/control/:id",
+            "name": "远程控制",
+            "component": "./device/control",
+            "hideInMenu": true
+          }
+        ],
+        "redirect": "/device/list"
+      },
+      {
+        "path": "/data",
+        "name": "数据采集",
+        "icon": "database",
+        "routes": [
+          {
+            "path": "/data/list",
+            "name": "数据列表",
+            "component": "./data/list"
+          },
+          {
+            "path": "/data/visualization",
+            "name": "数据可视化",
+            "component": "./data/visualization"
+          },
+          {
+            "path": "/data/detail/:id",
+            "name": "数据详情",
+            "component": "./data/detail",
+            "hideInMenu": true
+          }
+        ]
+      }
+    ],
+    "npmClient": "npm"
+  },
+  "mainConfigFile": "/Users/mac/Desktop/故乡食品/app/frontend/.umirc.ts",
+  "config": {
+    "routeLoader": {
+      "moduleType": "esm"
+    },
+    "mountElementId": "root",
+    "history": {
+      "type": "browser"
+    },
+    "base": "/",
+    "svgr": {},
+    "publicPath": "/",
+    "mfsu": {
+      "strategy": "eager"
+    },
+    "ignoreMomentLocale": true,
+    "externals": {},
+    "autoCSSModules": true,
+    "alias": {
+      "umi": "@@/exports",
+      "react": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/react",
+      "react-dom": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/react-dom",
+      "react-router": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/react-router",
+      "react-router-dom": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/node_modules/react-router-dom",
+      "@": "/Users/mac/Desktop/故乡食品/app/frontend/src",
+      "@@": "/Users/mac/Desktop/故乡食品/app/frontend/src/.umi-production",
+      "regenerator-runtime": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/@umijs/preset-umi/node_modules/regenerator-runtime"
+    },
+    "routes": [
+      {
+        "path": "/",
+        "redirect": "/device"
+      },
+      {
+        "path": "/device",
+        "name": "设备管理",
+        "icon": "mobile",
+        "routes": [
+          {
+            "path": "/device/list",
+            "name": "设备列表",
+            "component": "./device/list"
+          },
+          {
+            "path": "/device/control/:id",
+            "name": "远程控制",
+            "component": "./device/control",
+            "hideInMenu": true
+          }
+        ],
+        "redirect": "/device/list"
+      },
+      {
+        "path": "/data",
+        "name": "数据采集",
+        "icon": "database",
+        "routes": [
+          {
+            "path": "/data/list",
+            "name": "数据列表",
+            "component": "./data/list"
+          },
+          {
+            "path": "/data/visualization",
+            "name": "数据可视化",
+            "component": "./data/visualization"
+          },
+          {
+            "path": "/data/detail/:id",
+            "name": "数据详情",
+            "component": "./data/detail",
+            "hideInMenu": true
+          }
+        ]
+      }
+    ],
+    "npmClient": "npm",
+    "targets": {
+      "chrome": 80
+    }
+  },
+  "routes": {
+    "1": {
+      "path": "/",
+      "redirect": "/device",
+      "id": "1",
+      "absPath": "/"
+    },
+    "2": {
+      "path": "/device",
+      "name": "设备管理",
+      "icon": "mobile",
+      "redirect": "/device/list",
+      "id": "2",
+      "absPath": "/device"
+    },
+    "3": {
+      "path": "/device/list",
+      "name": "设备列表",
+      "file": "@/pages/device/list/index.tsx",
+      "parentId": "2",
+      "id": "3",
+      "absPath": "/device/list",
+      "__content": "import React, { useState, useEffect, useRef } from 'react';\nimport { PageContainer, ProTable } from '@ant-design/pro-components';\nimport { Button, Space } from 'antd';\nimport { PlayCircleOutlined } from '@ant-design/icons';\nimport type { ProColumns } from '@ant-design/pro-components';\nimport LogViewer, { LogEntry } from '@/components/LogViewer';\nimport { logger } from '@/utils/logger';\nimport { deviceApi } from '@/services/api';\nimport { wsService } from '@/services/websocket';\n\ninterface DeviceItem {\n  id: string;\n  name: string;\n  status: 'online' | 'offline';\n  lastOnline?: string;\n}\n\nconst DeviceList: React.FC = () => {\n  const [logs, setLogs] = useState<LogEntry[]>([]);\n  const initializedRef = useRef(false);\n  const unsubscribeDeviceListRef = useRef<(() => void) | null>(null);\n\n  useEffect(() => {\n    // 防止重复初始化\n    if (initializedRef.current) {\n      return;\n    }\n    initializedRef.current = true;\n\n    // 订阅日志 - 先获取当前日志，避免立即触发更新\n    const currentLogs = logger.getLogs();\n    setLogs(currentLogs);\n    \n    const unsubscribe = logger.subscribe((newLogs) => {\n      // 使用setTimeout避免在渲染期间触发状态更新\n      setTimeout(() => {\n        setLogs(newLogs);\n      }, 0);\n    });\n\n    // 延迟初始化，避免在useEffect中立即触发状态更新\n    const timer = setTimeout(() => {\n      // 连接WebSocket\n      if (!wsService.isConnected()) {\n        wsService.connect();\n      }\n\n      // 监听设备列表更新\n      unsubscribeDeviceListRef.current = wsService.on('device_list', () => {\n        logger.info('收到设备列表更新');\n      });\n\n      // 初始化日志\n      logger.info('设备列表页面加载');\n      logger.info('正在获取设备列表...');\n    }, 100);\n\n    return () => {\n      clearTimeout(timer);\n      unsubscribe();\n      if (unsubscribeDeviceListRef.current) {\n        unsubscribeDeviceListRef.current();\n        unsubscribeDeviceListRef.current = null;\n      }\n      initializedRef.current = false;\n    };\n  }, []);\n\n  const columns: ProColumns<DeviceItem>[] = [\n    {\n      title: '设备ID',\n      dataIndex: 'id',\n      key: 'id',\n    },\n    {\n      title: '设备名称',\n      dataIndex: 'name',\n      key: 'name',\n    },\n    {\n      title: '状态',\n      dataIndex: 'status',\n      key: 'status',\n      valueEnum: {\n        online: { text: '在线', status: 'Success' },\n        offline: { text: '离线', status: 'Default' },\n      },\n    },\n    {\n      title: '最后在线',\n      dataIndex: 'lastOnline',\n      key: 'lastOnline',\n    },\n    {\n      title: '操作',\n      key: 'action',\n      render: (_, record) => (\n        <Space>\n          <Button\n            type=\"primary\"\n            icon={<PlayCircleOutlined />}\n            onClick={() => {\n              logger.info(`准备连接设备: ${record.name}`);\n              window.location.href = `/device/control/${record.id}`;\n            }}\n          >\n            远程控制\n          </Button>\n        </Space>\n      ),\n    },\n  ];\n\n  return (\n    <PageContainer>\n      <ProTable<DeviceItem>\n        columns={columns}\n        request={async () => {\n          try {\n            logger.info('请求设备列表数据');\n            const response = await deviceApi.getDeviceList();\n            return {\n              data: response.data || [],\n              success: true,\n              total: response.data?.length || 0,\n            };\n          } catch (error: any) {\n            logger.error(`获取设备列表失败: ${error.message}`);\n            return {\n              data: [],\n              success: false,\n              total: 0,\n            };\n          }\n        }}\n        rowKey=\"id\"\n        search={false}\n        toolBarRender={() => [\n          <Button \n            key=\"refresh\" \n            onClick={async () => {\n              logger.info('刷新设备列表');\n              // 重新请求数据\n              window.location.reload();\n            }}\n          >\n            刷新\n          </Button>,\n        ]}\n      />\n      \n      <div style={{ marginTop: 24 }}>\n        <LogViewer \n          logs={logs} \n          title=\"设备管理日志\"\n          onClear={() => logger.clearLogs()}\n        />\n      </div>\n    </PageContainer>\n  );\n};\n\nexport default DeviceList;\n\n",
+      "__isJSFile": true,
+      "__absFile": "/Users/mac/Desktop/故乡食品/app/frontend/src/pages/device/list/index.tsx"
+    },
+    "4": {
+      "path": "/device/control/:id",
+      "name": "远程控制",
+      "hideInMenu": true,
+      "file": "@/pages/device/control/index.tsx",
+      "parentId": "2",
+      "id": "4",
+      "absPath": "/device/control/:id",
+      "__content": "import React, { useState, useEffect } from 'react';\nimport { PageContainer } from '@ant-design/pro-components';\nimport { Row, Col } from 'antd';\nimport { useParams } from 'react-router-dom';\nimport LogViewer, { LogEntry } from '@/components/LogViewer';\nimport ScreenViewer from '@/components/ScreenViewer';\nimport ControlPanel from '@/components/ControlPanel';\nimport OperationHistory from '@/components/OperationHistory';\nimport { logger } from '@/utils/logger';\nimport { wsService } from '@/services/websocket';\n\nconst DeviceControl: React.FC = () => {\n  const { id } = useParams<{ id: string }>();\n  const [logs, setLogs] = useState<LogEntry[]>([]);\n\n  useEffect(() => {\n    if (!id) return;\n\n    // 订阅日志\n    const unsubscribe = logger.subscribe((newLogs) => {\n      setLogs(newLogs);\n    });\n\n    // 连接WebSocket\n    if (!wsService.isConnected()) {\n      wsService.connect();\n    }\n\n    logger.info(`进入设备控制页面，设备ID: ${id}`);\n    logger.info('正在连接设备...');\n\n    return () => {\n      unsubscribe();\n    };\n  }, [id]);\n\n  const handleScreenClick = (x: number, y: number) => {\n    logger.info(`屏幕点击: (${x}, ${y})`);\n  };\n\n  if (!id) {\n    return <PageContainer title=\"远程控制\">设备ID不存在</PageContainer>;\n  }\n\n  return (\n    <PageContainer title={`远程控制 - 设备 ${id}`}>\n      <Row gutter={16}>\n        <Col span={16}>\n          <ScreenViewer deviceId={id} />\n        </Col>\n        <Col span={8}>\n          <ControlPanel deviceId={id} onScreenClick={handleScreenClick} />\n        </Col>\n      </Row>\n      \n      <div style={{ marginTop: 24 }}>\n        <Row gutter={16}>\n          <Col span={12}>\n            <LogViewer \n              logs={logs} \n              title=\"控制日志\"\n              onClear={() => logger.clearLogs()}\n            />\n          </Col>\n          <Col span={12}>\n            <OperationHistory deviceId={id} />\n          </Col>\n        </Row>\n      </div>\n    </PageContainer>\n  );\n};\n\nexport default DeviceControl;\n\n",
+      "__isJSFile": true,
+      "__absFile": "/Users/mac/Desktop/故乡食品/app/frontend/src/pages/device/control/index.tsx"
+    },
+    "5": {
+      "path": "/data",
+      "name": "数据采集",
+      "icon": "database",
+      "id": "5",
+      "absPath": "/data"
+    },
+    "6": {
+      "path": "/data/list",
+      "name": "数据列表",
+      "file": "@/pages/data/list/index.tsx",
+      "parentId": "5",
+      "id": "6",
+      "absPath": "/data/list",
+      "__content": "import React, { useState, useEffect } from 'react';\nimport { PageContainer, ProTable } from '@ant-design/pro-components';\nimport { Button, Space, Tag } from 'antd';\nimport { EyeOutlined, DeleteOutlined } from '@ant-design/icons';\nimport type { ProColumns } from '@ant-design/pro-components';\nimport LogViewer, { LogEntry } from '@/components/LogViewer';\nimport { logger } from '@/utils/logger';\nimport { dataApi } from '@/services/api';\nimport { wsService } from '@/services/websocket';\n\ninterface DataItem {\n  id: string;\n  deviceId: string;\n  type: string;\n  content: any;\n  timestamp: number;\n  createdAt: string;\n}\n\nconst DataList: React.FC = () => {\n  const [logs, setLogs] = useState<LogEntry[]>([]);\n\n  useEffect(() => {\n    const unsubscribe = logger.subscribe((newLogs) => {\n      setLogs(newLogs);\n    });\n\n    // 连接WebSocket\n    if (!wsService.isConnected()) {\n      wsService.connect();\n    }\n\n    // 监听采集数据\n    const unsubscribeData = wsService.on('captured_data', (message: any) => {\n      logger.info(`收到采集数据: ${message.data?.type || 'unknown'}`);\n    });\n\n    logger.info('数据列表页面加载');\n    logger.info('正在获取采集数据...');\n\n    return () => {\n      unsubscribe();\n      unsubscribeData();\n    };\n  }, []);\n\n  const columns: ProColumns<DataItem>[] = [\n    {\n      title: 'ID',\n      dataIndex: 'id',\n      width: 200,\n      ellipsis: true,\n    },\n    {\n      title: '设备ID',\n      dataIndex: 'deviceId',\n      width: 150,\n    },\n    {\n      title: '数据类型',\n      dataIndex: 'type',\n      width: 150,\n      render: (_: any, record: DataItem) => <Tag color=\"blue\">{record.type}</Tag>,\n    },\n    {\n      title: '采集时间',\n      dataIndex: 'createdAt',\n      width: 180,\n      valueType: 'dateTime',\n    },\n    {\n      title: '操作',\n      key: 'action',\n      width: 150,\n      render: (_, record) => (\n        <Space>\n          <Button\n            type=\"link\"\n            icon={<EyeOutlined />}\n            onClick={() => {\n              window.location.href = `/data/detail/${record.id}`;\n            }}\n          >\n            查看\n          </Button>\n          <Button\n            type=\"link\"\n            danger\n            icon={<DeleteOutlined />}\n            onClick={async () => {\n              try {\n                await dataApi.deleteData(record.id);\n                logger.info(`删除数据: ${record.id}`);\n                window.location.reload();\n              } catch (error: any) {\n                logger.error(`删除数据失败: ${error.message}`);\n              }\n            }}\n          >\n            删除\n          </Button>\n        </Space>\n      ),\n    },\n  ];\n\n  return (\n    <PageContainer>\n      <ProTable<DataItem>\n        columns={columns}\n        request={async (params) => {\n          try {\n            logger.info('请求数据列表');\n            const response = await dataApi.getDataList({\n              deviceId: params.deviceId as string,\n              type: params.type as string,\n            });\n            return {\n              data: response.data || [],\n              success: true,\n              total: response.total || 0,\n            };\n          } catch (error: any) {\n            logger.error(`获取数据列表失败: ${error.message}`);\n            return {\n              data: [],\n              success: false,\n              total: 0,\n            };\n          }\n        }}\n        rowKey=\"id\"\n        search={{\n          labelWidth: 'auto',\n        }}\n        toolBarRender={() => [\n          <Button\n            key=\"export\"\n            onClick={async () => {\n              try {\n                await dataApi.exportData();\n                logger.info('数据导出成功');\n              } catch (error: any) {\n                logger.error(`数据导出失败: ${error.message}`);\n              }\n            }}\n          >\n            导出CSV\n          </Button>,\n          <Button\n            key=\"refresh\"\n            onClick={() => {\n              logger.info('刷新数据列表');\n              window.location.reload();\n            }}\n          >\n            刷新\n          </Button>,\n        ]}\n      />\n      \n      <div style={{ marginTop: 24 }}>\n        <LogViewer \n          logs={logs} \n          title=\"数据采集日志\"\n          onClear={() => logger.clearLogs()}\n        />\n      </div>\n    </PageContainer>\n  );\n};\n\nexport default DataList;\n\n",
+      "__isJSFile": true,
+      "__absFile": "/Users/mac/Desktop/故乡食品/app/frontend/src/pages/data/list/index.tsx"
+    },
+    "7": {
+      "path": "/data/visualization",
+      "name": "数据可视化",
+      "file": "@/pages/data/visualization/index.tsx",
+      "parentId": "5",
+      "id": "7",
+      "absPath": "/data/visualization",
+      "__content": "import React, { useState, useEffect } from 'react';\nimport { PageContainer, ProCard } from '@ant-design/pro-components';\nimport { Row, Col, Select, Spin, Tabs } from 'antd';\nimport ReactECharts from 'echarts-for-react';\nimport LogViewer, { LogEntry } from '@/components/LogViewer';\nimport { logger } from '@/utils/logger';\nimport { dataApi, deviceApi } from '@/services/api';\n\n\nconst DataVisualization: React.FC = () => {\n  const [logs, setLogs] = useState<LogEntry[]>([]);\n  const [loading, setLoading] = useState(false);\n  const [statistics, setStatistics] = useState<any>(null);\n  const [deviceId, setDeviceId] = useState<string | undefined>(undefined);\n  const [devices, setDevices] = useState<any[]>([]);\n\n  useEffect(() => {\n    const unsubscribe = logger.subscribe((newLogs) => {\n      setLogs(newLogs);\n    });\n\n    logger.info('数据可视化页面加载');\n    loadDevices();\n    loadStatistics();\n\n    return () => {\n      unsubscribe();\n    };\n  }, []);\n\n  useEffect(() => {\n    loadStatistics();\n  }, [deviceId]);\n\n  const loadDevices = async () => {\n    try {\n      const response = await deviceApi.getDeviceList();\n      setDevices(response.data || []);\n    } catch (error: any) {\n      logger.error(`获取设备列表失败: ${error.message}`);\n    }\n  };\n\n  const loadStatistics = async () => {\n    try {\n      setLoading(true);\n      logger.info('正在加载统计数据...');\n      const response = await dataApi.getStatistics(deviceId);\n      setStatistics(response.data);\n      logger.info('统计数据加载成功');\n    } catch (error: any) {\n      logger.error(`加载统计数据失败: ${error.message}`);\n    } finally {\n      setLoading(false);\n    }\n  };\n\n  // 数据类型分布饼图\n  const getTypeDistributionChart = () => {\n    if (!statistics?.byType) return null;\n\n    const data = Object.entries(statistics.byType).map(([name, value]) => ({\n      name,\n      value,\n    }));\n\n    return {\n      title: {\n        text: '数据类型分布',\n        left: 'center',\n      },\n      tooltip: {\n        trigger: 'item',\n      },\n      series: [\n        {\n          type: 'pie',\n          radius: '50%',\n          data,\n          emphasis: {\n            itemStyle: {\n              shadowBlur: 10,\n              shadowOffsetX: 0,\n              shadowColor: 'rgba(0, 0, 0, 0.5)',\n            },\n          },\n        },\n      ],\n    };\n  };\n\n  // 时间趋势折线图\n  const getTimeTrendChart = () => {\n    if (!statistics?.byDate) return null;\n\n    const dates = Object.keys(statistics.byDate).sort();\n    const values = dates.map(date => statistics.byDate[date]);\n\n    return {\n      title: {\n        text: '数据采集趋势',\n        left: 'center',\n      },\n      tooltip: {\n        trigger: 'axis',\n      },\n      xAxis: {\n        type: 'category',\n        data: dates,\n      },\n      yAxis: {\n        type: 'value',\n      },\n      series: [\n        {\n          data: values,\n          type: 'line',\n          smooth: true,\n          areaStyle: {},\n        },\n      ],\n    };\n  };\n\n  // 数据类型柱状图\n  const getTypeBarChart = () => {\n    if (!statistics?.byType) return null;\n\n    const types = Object.keys(statistics.byType);\n    const values = types.map(type => statistics.byType[type]);\n\n    return {\n      title: {\n        text: '数据类型对比',\n        left: 'center',\n      },\n      tooltip: {\n        trigger: 'axis',\n        axisPointer: {\n          type: 'shadow',\n        },\n      },\n      xAxis: {\n        type: 'category',\n        data: types,\n        axisLabel: {\n          rotate: 45,\n        },\n      },\n      yAxis: {\n        type: 'value',\n      },\n      series: [\n        {\n          data: values,\n          type: 'bar',\n          itemStyle: {\n            color: '#1890ff',\n          },\n        },\n      ],\n    };\n  };\n\n  // 热力图（按小时）\n  const getHeatmapChart = () => {\n    if (!statistics?.hourlyData) return null;\n\n    const hours = statistics.hourlyData.map((item: any) => item.hour);\n    const counts = statistics.hourlyData.map((item: any) => item.count);\n    const maxCount = Math.max(...counts, 1);\n\n    return {\n      title: {\n        text: '数据采集热力图（24小时）',\n        left: 'center',\n      },\n      tooltip: {\n        position: 'top',\n      },\n      xAxis: {\n        type: 'category',\n        data: hours,\n        splitArea: {\n          show: true,\n        },\n      },\n      yAxis: {\n        type: 'category',\n        data: ['数据量'],\n        splitArea: {\n          show: true,\n        },\n      },\n      visualMap: {\n        min: 0,\n        max: maxCount,\n        calculable: true,\n        orient: 'horizontal',\n        left: 'center',\n        bottom: '15%',\n        inRange: {\n          color: ['#50a3ba', '#eac736', '#d94e5d'],\n        },\n      },\n      series: [\n        {\n          name: '数据量',\n          type: 'heatmap',\n          data: counts.map((count: number, index: number) => [index, 0, count]),\n          label: {\n            show: true,\n              },\n          emphasis: {\n            itemStyle: {\n              shadowBlur: 10,\n              shadowColor: 'rgba(0, 0, 0, 0.5)',\n            },\n          },\n        },\n      ],\n    };\n  };\n\n  // 设备数据对比柱状图\n  const getDeviceComparisonChart = () => {\n    if (!statistics?.byDevice) return null;\n\n    const deviceIds = Object.keys(statistics.byDevice);\n    const values = deviceIds.map(id => statistics.byDevice[id]);\n    const deviceNames = deviceIds.map(id => {\n      const device = devices.find(d => d.id === id);\n      return device ? device.name : id;\n    });\n\n    return {\n      title: {\n        text: '设备数据对比',\n        left: 'center',\n      },\n      tooltip: {\n        trigger: 'axis',\n        axisPointer: {\n          type: 'shadow',\n        },\n      },\n      legend: {\n        data: ['数据量'],\n      },\n      xAxis: {\n        type: 'category',\n        data: deviceNames,\n      },\n      yAxis: {\n        type: 'value',\n      },\n      series: [\n        {\n          name: '数据量',\n          type: 'bar',\n          data: values,\n          itemStyle: {\n            color: function(params: any) {\n              const colors = ['#5470c6', '#91cc75', '#fac858', '#ee6666', '#73c0de'];\n              return colors[params.dataIndex % colors.length];\n            },\n          },\n        },\n      ],\n    };\n  };\n\n  // 散点图（时间 vs 数据量）\n  const getScatterChart = () => {\n    if (!statistics?.byDate) return null;\n\n    const dates = Object.keys(statistics.byDate).sort();\n    const data = dates.map((date, index) => [index, statistics.byDate[date]]);\n\n    return {\n      title: {\n        text: '数据分布散点图',\n        left: 'center',\n      },\n      tooltip: {\n        trigger: 'item',\n        formatter: (params: any) => {\n          const date = dates[params.value[0]];\n          return `日期: ${date}<br/>数据量: ${params.value[1]}`;\n        },\n      },\n      xAxis: {\n        type: 'value',\n        name: '时间序列',\n      },\n      yAxis: {\n        type: 'value',\n        name: '数据量',\n      },\n      series: [\n        {\n          type: 'scatter',\n          data: data,\n          symbolSize: (data: number[]) => Math.sqrt(data[1]) * 2,\n          itemStyle: {\n            color: '#1890ff',\n            opacity: 0.6,\n          },\n        },\n      ],\n    };\n  };\n\n  // 统计卡片数据\n  const getStatCards = () => {\n    if (!statistics) return [];\n\n    return [\n      {\n        title: '总数据量',\n        value: statistics.total || 0,\n        color: '#1890ff',\n      },\n      {\n        title: '数据类型数',\n        value: Object.keys(statistics.byType || {}).length,\n        color: '#52c41a',\n      },\n      {\n        title: '采集天数',\n        value: Object.keys(statistics.byDate || {}).length,\n        color: '#faad14',\n      },\n    ];\n  };\n\n  return (\n    <PageContainer\n      title=\"数据可视化\"\n      extra={\n        <Select\n          placeholder=\"选择设备\"\n          style={{ width: 200 }}\n          allowClear\n          value={deviceId}\n          onChange={(value) => {\n            setDeviceId(value);\n          }}\n        >\n          {devices.map(device => (\n            <Select.Option key={device.id} value={device.id}>\n              {device.name}\n            </Select.Option>\n          ))}\n        </Select>\n      }\n    >\n      <Spin spinning={loading}>\n        {/* 统计卡片 */}\n        <Row gutter={16} style={{ marginBottom: 16 }}>\n          {getStatCards().map((card, index) => (\n            <Col span={8} key={index}>\n              <ProCard>\n                <div style={{ textAlign: 'center' }}>\n                  <div style={{ fontSize: '24px', fontWeight: 'bold', color: card.color }}>\n                    {card.value}\n                  </div>\n                  <div style={{ marginTop: 8, color: '#666' }}>{card.title}</div>\n                </div>\n              </ProCard>\n            </Col>\n          ))}\n        </Row>\n\n        {/* 图表 */}\n        <Tabs\n          defaultActiveKey=\"1\"\n          items={[\n            {\n              key: '1',\n              label: '基础图表',\n              children: (\n                <Row gutter={16}>\n                  <Col span={12}>\n                    <ProCard title=\"数据类型分布\">\n                      {statistics?.byType ? (\n                        <ReactECharts\n                          option={getTypeDistributionChart()}\n                          style={{ height: '400px' }}\n                        />\n                      ) : (\n                        <div style={{ textAlign: 'center', padding: '50px' }}>暂无数据</div>\n                      )}\n                    </ProCard>\n                  </Col>\n                  <Col span={12}>\n                    <ProCard title=\"数据采集趋势\">\n                      {statistics?.byDate ? (\n                        <ReactECharts\n                          option={getTimeTrendChart()}\n                          style={{ height: '400px' }}\n                        />\n                      ) : (\n                        <div style={{ textAlign: 'center', padding: '50px' }}>暂无数据</div>\n                      )}\n                    </ProCard>\n                  </Col>\n                </Row>\n              ),\n            },\n            {\n              key: '2',\n              label: '对比分析',\n              children: (\n                <Row gutter={16}>\n                  <Col span={12}>\n                    <ProCard title=\"数据类型对比\">\n                      {statistics?.byType ? (\n                        <ReactECharts\n                          option={getTypeBarChart()}\n                          style={{ height: '400px' }}\n                        />\n                      ) : (\n                        <div style={{ textAlign: 'center', padding: '50px' }}>暂无数据</div>\n                      )}\n                    </ProCard>\n                  </Col>\n                  <Col span={12}>\n                    <ProCard title=\"设备数据对比\">\n                      {statistics?.byDevice && Object.keys(statistics.byDevice).length > 0 ? (\n                        <ReactECharts\n                          option={getDeviceComparisonChart()}\n                          style={{ height: '400px' }}\n                        />\n                      ) : (\n                        <div style={{ textAlign: 'center', padding: '50px' }}>暂无数据</div>\n                      )}\n                    </ProCard>\n                  </Col>\n                </Row>\n              ),\n            },\n            {\n              key: '3',\n              label: '高级分析',\n              children: (\n                <Row gutter={16}>\n                  <Col span={12}>\n                    <ProCard title=\"24小时热力图\">\n                      {statistics?.hourlyData ? (\n                        <ReactECharts\n                          option={getHeatmapChart()}\n                          style={{ height: '400px' }}\n                        />\n                      ) : (\n                        <div style={{ textAlign: 'center', padding: '50px' }}>暂无数据</div>\n                      )}\n                    </ProCard>\n                  </Col>\n                  <Col span={12}>\n                    <ProCard title=\"数据分布散点图\">\n                      {statistics?.byDate ? (\n                        <ReactECharts\n                          option={getScatterChart()}\n                          style={{ height: '400px' }}\n                        />\n                      ) : (\n                        <div style={{ textAlign: 'center', padding: '50px' }}>暂无数据</div>\n                      )}\n                    </ProCard>\n                  </Col>\n                </Row>\n              ),\n            },\n          ]}\n        />\n      </Spin>\n\n      <div style={{ marginTop: 24 }}>\n        <LogViewer \n          logs={logs} \n          title=\"可视化日志\"\n          onClear={() => logger.clearLogs()}\n        />\n      </div>\n    </PageContainer>\n  );\n};\n\nexport default DataVisualization;\n",
+      "__isJSFile": true,
+      "__absFile": "/Users/mac/Desktop/故乡食品/app/frontend/src/pages/data/visualization/index.tsx"
+    },
+    "8": {
+      "path": "/data/detail/:id",
+      "name": "数据详情",
+      "hideInMenu": true,
+      "file": "@/pages/data/detail/index.tsx",
+      "parentId": "5",
+      "id": "8",
+      "absPath": "/data/detail/:id",
+      "__content": "import React, { useState, useEffect } from 'react';\nimport { PageContainer } from '@ant-design/pro-components';\nimport { Card, Descriptions, Tag, Spin, message } from 'antd';\nimport { useParams } from 'react-router-dom';\nimport LogViewer, { LogEntry } from '@/components/LogViewer';\nimport { logger } from '@/utils/logger';\nimport { dataApi } from '@/services/api';\n\nconst DataDetail: React.FC = () => {\n  const { id } = useParams<{ id: string }>();\n  const [logs, setLogs] = useState<LogEntry[]>([]);\n  const [loading, setLoading] = useState(true);\n  const [data, setData] = useState<any>(null);\n\n  useEffect(() => {\n    const unsubscribe = logger.subscribe((newLogs) => {\n      setLogs(newLogs);\n    });\n\n    const fetchData = async () => {\n      if (!id) return;\n      \n      try {\n        logger.info(`查看数据详情，ID: ${id}`);\n        setLoading(true);\n        const response = await dataApi.getData(id);\n        setData(response.data);\n        logger.info('数据详情加载成功');\n      } catch (error: any) {\n        logger.error(`获取数据详情失败: ${error.message}`);\n        message.error('获取数据详情失败');\n      } finally {\n        setLoading(false);\n      }\n    };\n\n    fetchData();\n\n    return () => {\n      unsubscribe();\n    };\n  }, [id]);\n\n  if (loading) {\n    return (\n      <PageContainer title=\"数据详情\">\n        <Spin size=\"large\" style={{ display: 'block', textAlign: 'center', padding: '50px' }} />\n      </PageContainer>\n    );\n  }\n\n  if (!data) {\n    return (\n      <PageContainer title=\"数据详情\">\n        <Card>数据不存在</Card>\n      </PageContainer>\n    );\n  }\n\n  return (\n    <PageContainer title=\"数据详情\">\n      <Card>\n        <Descriptions title=\"基本信息\" bordered column={2}>\n          <Descriptions.Item label=\"数据ID\">{data.id}</Descriptions.Item>\n          <Descriptions.Item label=\"设备ID\">{data.deviceId}</Descriptions.Item>\n          <Descriptions.Item label=\"数据类型\">\n            <Tag color=\"blue\">{data.type}</Tag>\n          </Descriptions.Item>\n          <Descriptions.Item label=\"采集时间\">{data.createdAt}</Descriptions.Item>\n        </Descriptions>\n      </Card>\n\n      <Card title=\"数据内容\" style={{ marginTop: 16 }}>\n        <pre style={{ \n          background: '#f5f5f5', \n          padding: '16px', \n          borderRadius: '4px',\n          overflow: 'auto',\n          maxHeight: '500px',\n        }}>\n          {JSON.stringify(data.content, null, 2)}\n        </pre>\n      </Card>\n      \n      <div style={{ marginTop: 24 }}>\n        <LogViewer \n          logs={logs} \n          title=\"详情日志\"\n          onClear={() => logger.clearLogs()}\n        />\n      </div>\n    </PageContainer>\n  );\n};\n\nexport default DataDetail;\n\n",
+      "__isJSFile": true,
+      "__absFile": "/Users/mac/Desktop/故乡食品/app/frontend/src/pages/data/detail/index.tsx"
+    }
+  },
+  "apiRoutes": {},
+  "hasSrcDir": true,
+  "npmClient": "npm",
+  "umi": {
+    "version": "4.5.3",
+    "name": "Umi",
+    "importSource": "umi",
+    "cliName": "umi"
+  },
+  "bundleStatus": {
+    "done": false
+  },
+  "mfsuBundleStatus": {
+    "done": false
+  },
+  "react": {
+    "version": "19.2.0",
+    "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/react"
+  },
+  "react-dom": {
+    "version": "19.2.0",
+    "path": "/Users/mac/Desktop/故乡食品/app/frontend/node_modules/react-dom"
+  },
+  "appJS": {
+    "path": "/Users/mac/Desktop/故乡食品/app/frontend/src/app.tsx",
+    "exports": [
+      "rootContainer"
+    ]
+  },
+  "locale": "C",
+  "globalCSS": [],
+  "globalJS": [],
+  "overridesCSS": [],
+  "bundler": "webpack",
+  "framework": "react",
+  "typescript": {
+    "tsVersion": "5.9.3",
+    "tslibVersion": "2.8.1"
+  },
+  "faviconFiles": []
+}

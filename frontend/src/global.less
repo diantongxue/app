@@ -1,0 +1,206 @@
+// 全局蓝色科技风格样式
+
+:root {
+  --primary-color: #3979FE;
+  --primary-hover: #4A8AFF;
+  --primary-active: #2868FE;
+  --primary-light: rgba(57, 121, 254, 0.2);
+  --primary-dark: #1E4FE8;
+  --bg-primary: #0a1929;
+  --bg-secondary: #0f1929;
+  --bg-card: rgba(15, 25, 45, 0.95);
+  --border-color: rgba(57, 121, 254, 0.3);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --shadow-glow: rgba(57, 121, 254, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #0a1929 0%, #1a237e 30%, #1E4FE8 60%, #3979FE 100%);
+  background-attachment: fixed;
+  color: var(--text-primary);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+// Ant Design 主题覆盖
+.ant-layout {
+  background: transparent !important;
+}
+
+.ant-layout-sider {
+  background: var(--bg-card) !important;
+  border-right: 1px solid var(--border-color) !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.ant-menu {
+  background: transparent !important;
+  border-right: none !important;
+  
+  .ant-menu-item {
+    color: var(--text-secondary) !important;
+    
+    &:hover {
+      background: var(--primary-light) !important;
+      color: var(--primary-color) !important;
+    }
+    
+    &.ant-menu-item-selected {
+      background: rgba(57, 121, 254, 0.2) !important;
+      color: var(--primary-color) !important;
+      
+      &::after {
+        border-right-color: var(--primary-color) !important;
+      }
+    }
+  }
+  
+  .ant-menu-submenu-title {
+    color: var(--text-secondary) !important;
+    
+    &:hover {
+      color: var(--primary-color) !important;
+    }
+  }
+}
+
+.ant-layout-header {
+  background: var(--bg-card) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+  padding: 0 24px !important;
+  height: 64px !important;
+  line-height: 64px !important;
+}
+
+.ant-layout-content {
+  background: transparent !important;
+  padding: 24px !important;
+}
+
+.ant-card {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(57, 121, 254, 0.1) !important;
+  
+  .ant-card-head {
+    background: transparent !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+  }
+  
+  .ant-card-body {
+    color: var(--text-primary) !important;
+  }
+}
+
+.ant-btn-primary {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px var(--shadow-glow) !important;
+  
+  &:hover {
+    background: linear-gradient(135deg, var(--primary-hover) 0%, var(--primary-color) 100%) !important;
+    box-shadow: 0 6px 20px rgba(57, 121, 254, 0.6) !important;
+    transform: translateY(-1px);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.ant-table {
+  background: transparent !important;
+  
+  .ant-table-thead > tr > th {
+    background: var(--primary-light) !important;
+    border-bottom: 1px solid var(--border-color) !important;
+    color: var(--text-primary) !important;
+  }
+  
+  .ant-table-tbody > tr {
+    &:hover > td {
+      background: rgba(57, 121, 254, 0.05) !important;
+    }
+    
+    > td {
+      border-bottom: 1px solid var(--border-color) !important;
+      color: var(--text-secondary) !important;
+    }
+  }
+}
+
+.ant-input,
+.ant-input-password {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+  
+  &:hover {
+    border-color: rgba(57, 121, 254, 0.5) !important;
+  }
+  
+  &:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 2px rgba(57, 121, 254, 0.2) !important;
+  }
+  
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.4) !important;
+  }
+}
+
+.ant-select-selector {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+  
+  &:hover {
+    border-color: rgba(57, 121, 254, 0.5) !important;
+  }
+}
+
+.ant-pro-page-container {
+  .ant-pro-page-container-header {
+    background: transparent !important;
+    border-bottom: 1px solid var(--border-color) !important;
+  }
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(57, 121, 254, 0.5);
+  border-radius: 4px;
+  
+  &:hover {
+    background: rgba(57, 121, 254, 0.7);
+  }
+}

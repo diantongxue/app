@@ -1,0 +1,68 @@
+========================================
+Mac 终端安装命令 - 安装缺失的 Android SDK 组件
+========================================
+
+在 Mac 终端中，复制粘贴以下所有命令执行：
+
+# ========================================
+# 步骤1：进入 Android SDK 目录
+# ========================================
+cd $HOME/Library/Android/sdk/cmdline-tools
+
+# ========================================
+# 步骤2：清理旧文件
+# ========================================
+rm -rf commandlinetools.zip cmdline-tools latest
+
+# ========================================
+# 步骤3：下载 Android SDK Command Line Tools
+# ========================================
+curl -L -o commandlinetools.zip https://dl.google.com/android/repository/commandlinetools-mac-11076708_latest.zip
+
+# ========================================
+# 步骤4：解压并安装
+# ========================================
+unzip -q commandlinetools.zip
+mv cmdline-tools latest
+rm -f commandlinetools.zip
+
+# ========================================
+# 步骤5：配置环境变量
+# ========================================
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
+# ========================================
+# 步骤6：接受许可证
+# ========================================
+yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
+
+# ========================================
+# 步骤7：安装 SDK 组件
+# ========================================
+$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
+
+# ========================================
+# 步骤8：验证安装
+# ========================================
+echo "验证安装..."
+ls -d $ANDROID_HOME/platform-tools && echo "✅ platform-tools 已安装"
+ls -d $ANDROID_HOME/platforms/android-34 && echo "✅ platforms;android-34 已安装"
+ls -d $ANDROID_HOME/build-tools/34.0.0 && echo "✅ build-tools;34.0.0 已安装"
+
+# ========================================
+# 步骤9：永久配置环境变量（可选）
+# ========================================
+echo 'export ANDROID_HOME=$HOME/Library/Android/sdk' >> ~/.zshrc
+echo 'export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin' >> ~/.zshrc
+source ~/.zshrc
+
+# ========================================
+# 步骤10：编译 APK
+# ========================================
+cd /Users/mac/Desktop/故乡食品/app/android-app
+./gradlew assembleDebug
+
+========================================
+完成！
+========================================

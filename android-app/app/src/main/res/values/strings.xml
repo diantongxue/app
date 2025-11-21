@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">手机远程控制</string>
+    <string name="control_service_description">用于远程控制手机App，执行点击、滑动等操作</string>
+    <string name="data_collector_service_description">用于采集手机App的页面数据</string>
+</resources>
+
